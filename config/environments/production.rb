@@ -3,6 +3,9 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # Adding this in because i can't access the public network after deploying on railway.
+  config.hosts << "rails-production-2a65.up.railway.app"
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
