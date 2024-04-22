@@ -11,6 +11,9 @@ module RubyRailsPostgres
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    # Adding this in here because just putting it in the config/environment/production.rb file didn't work
+    config.hosts << "rails-production-2a65.up.railway.app"
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
