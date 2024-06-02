@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
   # GET /users or /users.json
   def index
-    @users = User.all
+    @users = User.all #note that the User here refers to the User model. So the controller is telling the User model what to do.
   end
 
   # GET /users/1 or /users/1.json
